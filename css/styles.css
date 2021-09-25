@@ -9,6 +9,21 @@
   --background-color-footer: #2f303a;
 }
 
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -20,6 +35,13 @@ body {
 }
 .list {
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .btn {
@@ -35,7 +57,26 @@ body {
   color: var(--accent-color);
 }
 
+.secondary-title {
+  margin-bottom: 50px;
+}
+
 /* ------------HEADER----------- */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-contact-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .logo-header {
   font-family: Raleway;
@@ -43,6 +84,15 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-header-color);
+  margin-right: 93px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact-link:not(.header-contact-link:last-child) {
+  margin-right: 50px;
 }
 
 .header-link {
@@ -74,11 +124,24 @@ body {
 
 .header {
   background-color: var(--background-color-header);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 /* ------------HERO----------- */
 
+.hero {
+  background-color: var(--secondary-title-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero .container {
+   text-align: center;
+}
 .primary-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,13 +149,18 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-title-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -100,11 +168,23 @@ body {
   background-color: var(--accent-color);
 }
 
-.hero {
-  background-color: var(--secondary-title-color);
-}
+
+
 
 /* ------------BENEFITS----------- */
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .benefits-title {
   font-weight: 700;
@@ -112,6 +192,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .benefits-text {
@@ -120,7 +201,32 @@ body {
   color: var(--primary-text-color);
 }
 
+/* ------------WORK----------- */
+
+.work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.work-list {
+  display: flex;
+}
+
+
+.work-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+
 /* ------------TEAM----------- */
+
+.team-list {
+  display: flex;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .secondary-title {
   font-weight: 700;
@@ -136,6 +242,7 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-title-color);
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -147,22 +254,41 @@ body {
 
 .team {
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.card-photo {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* ------------FOOTER----------- */
 
 .logo-footer {
+  display: inline-block;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--primary-title-color);
+  margin-bottom: 20px;
 }
 
 .address {
+ display: flex;
+  flex-direction: column;
+}
+
+.adds {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-title-color);
+  margin-bottom: 9px;
+}
+
+.contact-footer.mailto {
+  margin-bottom: 9px;
 }
 
 .contact-footer {
@@ -181,9 +307,26 @@ body {
 
 .footer {
   background-color: var(--background-color-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* ------------PORTFOLIO----------- */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .filter .btn {
   font-weight: 500;
@@ -200,6 +343,17 @@ body {
   background-color: var(--accent-color);
 }
 
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.project-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .project-title {
   font-weight: 700;
   font-size: 18px;
