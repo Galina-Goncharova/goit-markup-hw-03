@@ -12,6 +12,11 @@
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+} 
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 ul {
@@ -173,8 +178,7 @@ body {
 
 /* ------------BENEFITS----------- */
 
-.benefits {
-  padding-top: 94px;
+.section.benefits {
   padding-bottom: 47px;
 }
 
@@ -203,9 +207,8 @@ body {
 
 /* ------------WORK----------- */
 
-.work {
+.section.work {
   padding-top: 47px;
-  padding-bottom: 94px;
 }
 
 .work-list {
@@ -254,8 +257,6 @@ body {
 
 .team {
   background-color: var(--background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .card-photo {
@@ -313,10 +314,6 @@ body {
 
 /* ------------PORTFOLIO----------- */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .filter {
   display: flex;
@@ -366,4 +363,11 @@ body {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
+}
+
+.card-project {
+  padding: 20px 24px;
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
